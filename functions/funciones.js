@@ -4,7 +4,7 @@ function square(x)
     return x*x
 };
 
-//Definicion a traes de una ariable
+//Definicion a traes de una variable
 const power = function(base, exponente){
     let result=1;
     for (let count = 0; count < exponente; count ++){
