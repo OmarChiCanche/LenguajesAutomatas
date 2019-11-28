@@ -15,28 +15,28 @@ for linea in archivo:
 
 
 
-print "\nVariables válidas"
+print ("\nVariables válidas")
 patron = r'[A-Za-z0-9-]+\s+[=]+'
 resultado = re.findall(patron,texto)
-print "Resultado de busqueda\n", resultado
+print ("Resultado de busqueda\n", resultado)
 
 
-print "\nEnteros y decimales"
+print ("\nEnteros y decimales")
 patron = r"([0-9]+.[0-9]+|[0-9]+)"
 result = re.findall(patron,texto) 
-print "Resultado de busqueda\n", result
+print ("Resultado de busqueda\n", result)
 
-print "\nOperadores aritméticos"
+print ("\nOperadores aritméticos")
 patron = r"[\+|\-|\*|\/]"
 result = re.findall(patron,texto)
-print "Resultado de busqueda\n", result
+print ("Resultado de busqueda\n", result)
 
-print "\nOperadores relacionales"
+print ("\nOperadores relacionales")
 patron = r"[|<|>|!=|<=|>=|=]+"
 result = re.findall(patron,texto)
-print "Resultado de busqueda\n", result
+print ("Resultado de busqueda\n", result)
 
-print "\nPalabras reservadas"
+print ("\nPalabras reservadas")
 patron = r"(else|for|import|class|try|while|False|def|if|raise|None|return )"
 result = re.findall(patron,texto)
-print "Resultado de busqueda\n", result
+print ("Resultado de busqueda\n", result)
